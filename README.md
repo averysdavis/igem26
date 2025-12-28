@@ -1,4 +1,4 @@
-# Team Example 2025 Wiki
+# Team Example 2026 Wiki
 
 This repository **MUST** contain all coding assets to generate your team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).
 
@@ -52,11 +52,13 @@ To work locally with this project, follow the steps below:
 
 #### Install
 ```bash
-git clone https://gitlab.igem.org/2025/example.git
-cd example
-python3 -m venv venv
-. venv/bin/activate # on Linux, MacOS; or
-. venv\Scripts\activate # on Windows
+git clone https://github.com/averysdavis/igem26
+cd ~/igem26
+git pull # to make sure it's up to date
+sudo apt install python3.12-venv # if you haven't already installed
+python3 -m venv env
+. env/bin/activate # on Linux, MacOS; or
+. env\Scripts\activate # on Windows
 pip install -r dependencies.txt
 ```
 
