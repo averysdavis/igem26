@@ -3,6 +3,10 @@
 {% block title %}Home{% endblock %}
 {% block lead %}<b>Your iGEM Journey Begins Here!</b> We wish you a successful and rewarding season!{% endblock %}
 
+{% block extra_css %}
+<link href="{{ url_for('static', filename = 'custom-css/home.css') }}" rel="stylesheet">
+{% endblock %}
+
 {% block page_content %}
 
 <div class="row">
@@ -16,6 +20,8 @@
       <li>Explore the various Project Prizes and their corresponding wiki requirements on the <a href="https://competition.igem.org/judging/project-prizes" target="_blank">Project Prizes Page</a>.</li>
       <li>Discover the eligibility criteria and wiki requirements for Special Prizes on the <a href="https://competition.igem.org/judging/special-prizes" target="_blank">Special Prizes Page</a>.</li>
     </ul>
+
+    <p id="jquery-test">jQuery Test: This text should change color when jQuery loads!</p>
   </div>
 </div>
 <div class="row mt-4">
@@ -64,4 +70,7 @@
   </div>
 </div>
 
+{% endblock %}
+{% block extra_js %}
+<script src="{{ url_for('static', filename = 'custom-js/home.js') }}"></script>
 {% endblock %}
