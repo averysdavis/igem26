@@ -54,6 +54,15 @@
   <!-- Chart.js -->
   <script src="{{ url_for('static', filename = 'chart.js') }}"></script>
 
+  <!-- Chart.js Accessibility Plugin -->
+  <script src="{{ url_for('static', filename = 'chartjs-plugin-a11y.js') }}"></script>
+  <script>
+    // Register the accessibility plugin with Chart.js
+    if (typeof Chart !== 'undefined' && typeof ChartjsPluginA11y !== 'undefined') {
+      Chart.register({ChartjsPluginA11y});
+    }
+  </script>
+
   <!-- MathJax -->
   <script>
     window.MathJax = {
