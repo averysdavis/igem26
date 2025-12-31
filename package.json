@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "mathjax": "^4.1.0"
+  },
+  "name": "igem26",
+  "version": "1.0.0",
+  "description": "This repository **MUST** contain all coding assets to generate your team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/averysdavis/igem26.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/averysdavis/igem26/issues"
+  },
+  "homepage": "https://github.com/averysdavis/igem26#readme"
+}
