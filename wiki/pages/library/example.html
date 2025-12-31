@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}Title of Page{% endblock %}
+{% block lead %}<b>Lead of Page</b> We wish you a successful and rewarding season!{% endblock %}
+
+{% block extra_css %}
+<!--<link href="{{ url_for('static', filename = 'custom-css/home.css') }}" rel="stylesheet">-->
+{% endblock %}
+
+{% block page_content %}
+
+<section>
+    <h1>Title of Section</h1>
+    <hr />
+    <p>Content of Section</p>
+</section>
+<section>
+    <h1>Title of Section</h1>
+    <hr />
+    <p>Content of Section</p>
+</section>
+<section>
+    <h1>Title of Section</h1>
+    <hr />
+    <p>Content of Section</p>
+</section>
+
+{% endblock %}
+{% block extra_js %}
+<!--<script src="{{ url_for('static', filename = 'custom-js/home.js') }}"></script>-->
+{% endblock %}
