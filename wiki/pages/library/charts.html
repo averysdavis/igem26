@@ -10,22 +10,11 @@
 {% block page_content %}
 
 <section>
-    <h1>Title of Section</h1>
-    <hr />
-    <p>Content of Section</p>
-</section>
-<section>
-    <h1>Title of Section</h1>
-    <hr />
-    <p>Content of Section</p>
-</section>
-<section>
-    <h1>Title of Section</h1>
-    <hr />
-    <p>Content of Section</p>
+    <h2>Bar chart example</h2>
+    <canvas id="myChart"></canvas>
 </section>
 
 {% endblock %}
 {% block extra_js %}
-<!--<script src="{{ url_for('static', filename = 'custom-js/home.js') }}"></script>-->
+<script src="{{ url_for('static', filename = 'charts/example/example1.js') }}"></script>
 {% endblock %}
