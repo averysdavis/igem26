@@ -1,12 +1,12 @@
 {
   "dependencies": {
+    "jquery": "^3.7.1",
     "mathjax": "^4.1.0"
   },
   "name": "igem26",
   "version": "1.0.0",
   "description": "This repository **MUST** contain all coding assets to generate your team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
