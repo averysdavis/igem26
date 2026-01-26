@@ -3,6 +3,10 @@
 {% block title %}Home{% endblock %}
 {% block lead %}<b>Your iGEM Journey Begins Here!</b> We wish you a successful and rewarding season!{% endblock %}
 
+{% block general_css %}
+{# Exclude general style.css from home page #}
+{% endblock %}
+
 {% block extra_css %}
 <link href="{{ url_for('static', filename = 'custom-css/home.css') }}" rel="stylesheet">
 {% endblock %}
