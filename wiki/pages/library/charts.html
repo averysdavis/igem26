@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
-{% block title %}Title of Page{% endblock %}
-{% block lead %}<b>Lead of Page</b> We wish you a successful and rewarding season!{% endblock %}
+{% block title %}Example Charts{% endblock %}
+{% block lead %}This is using Chart.js{% endblock %}
 
 {% block extra_css %}
 <!--<link href="{{ url_for('static', filename = 'custom-css/home.css') }}" rel="stylesheet">-->
@@ -10,11 +10,17 @@
 {% block page_content %}
 
 <section>
-    <h2>Bar chart example</h2>
-    <canvas id="myChart"></canvas>
+    <h2>Basic Bar chart</h2>
+    <canvas id="barChart"></canvas>
+</section>
+
+<section>
+    <h2>Scatter Chart</h2>
+    <canvas id="scatterChart"></canvas>
 </section>
 
 {% endblock %}
 {% block extra_js %}
-<script src="{{ url_for('static', filename = 'charts/example/example1.js') }}"></script>
+<script src="{{ url_for('static', filename = 'charts/example/barChart.js') }}"></script>
+<script src="{{ url_for('static', filename = 'charts/example/scatterChart.js') }}"></script>
 {% endblock %}

@@ -1,4 +1,4 @@
-const ctx = document.getElementById('myChart');
+const ctx = document.getElementById('barChart');
 
 const massPopChart = new Chart(ctx, {
     type: 'bar',
