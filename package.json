@@ -3,7 +3,8 @@
     "chart.js": "^4.5.1",
     "chartjs-plugin-a11y": "^0.1.3",
     "jquery": "^3.7.1",
-    "mathjax": "^4.1.0"
+    "mathjax": "^4.1.0",
+    "patternomaly": "^1.3.2"
   },
   "name": "igem26",
   "version": "1.0.0",
