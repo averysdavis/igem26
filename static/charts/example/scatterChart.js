@@ -1,34 +1,45 @@
-const ctx = document.getElementById("scatterChart").getContext("2d");
+const sc = document.getElementById('scatterChart');
 
-const xyValues = [
-    { x: 50, y: 7 },
-    { x: 60, y: 8 },
-    { x: 70, y: 8 },
-    { x: 80, y: 9 },
-    { x: 90, y: 9 },
-    { x: 100, y: 9 },
-    { x: 110, y: 10 },
-    { x: 120, y: 11 },
-    { x: 130, y: 14 },
-    { x: 140, y: 14 },
-    { x: 150, y: 15 }
-];
-
-new Chart(ctx, {
-    type: "scatter",
-    data: {
-        datasets: [{
-            pointRadius: 4,
-            pointBackgroundColor: "rgba(0,0,255,1)",
-            data: xyValues
-        }]
-    },
-    options: {
-        scales: {
-            x: {
-                type: 'linear',
-                position: 'bottom'
-            }
-        }
-    }
-});
+// Ensure the canvas element exists before creating the chart
+if (sc) {
+    const scatter = new Chart(sc, {
+        type: 'scatter',
+        data: {
+            datasets: [
+                {
+                    label: 'Example data',
+                    data: [
+                        { x: 10, y: 20 },
+                        { x: 15, y: 10 },
+                        { x: 20, y: 25 },
+                        { x: 25, y: 5 },
+                    ],
+                    backgroundColor: 'rgba(75, 192, 192, 0.7)',
+                },
+            ],
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'X value',
+                    },
+                    min: 0,
+                    max: 30,
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Y value',
+                    },
+                    min: 0,
+                    max: 30,
+                },
+            },
+        },
+    });
+}
