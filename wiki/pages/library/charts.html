@@ -15,12 +15,18 @@
 </section>
 
 <section>
-    <h2>Scatter Chart</h2>
+    <h2>Pie chart</h2>
+    <canvas id="pieChart"></canvas>
+</section>
+
+<section>
+    <h2>Scatter chart</h2>
     <canvas id="scatterChart"></canvas>
 </section>
 
 {% endblock %}
 {% block extra_js %}
 <script src="{{ url_for('static', filename = 'charts/example/barChart.js') }}"></script>
+<script src="{{ url_for('static', filename = 'charts/example/pieChart.js') }}"></script>
 <script src="{{ url_for('static', filename = 'charts/example/scatterChart.js') }}"></script>
 {% endblock %}
