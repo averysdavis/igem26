@@ -1,4 +1,4 @@
-# Team Example 2026 Wiki
+# KhanLab-BayArea 2026 Wiki
 
 This repository **MUST** contain all coding assets to generate your team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).
 
