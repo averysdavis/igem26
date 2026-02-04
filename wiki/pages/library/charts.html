@@ -15,6 +15,11 @@
 </section>
 
 <section>
+    <h2>Comparison Bar chart</h2>
+    <canvas id="compBarChart"></canvas>
+</section>
+
+<section>
     <h2>Pie chart</h2>
     <canvas id="pieChart"></canvas>
 </section>
@@ -32,6 +37,7 @@
 {% endblock %}
 {% block extra_js %}
 <script src="{{ url_for('static', filename = 'charts/example/barChart.js') }}"></script>
+<script src="{{ url_for('static', filename = 'charts/example/compBarChart.js') }}"></script>
 <script src="{{ url_for('static', filename = 'charts/example/pieChart.js') }}"></script>
 <script src="{{ url_for('static', filename = 'charts/example/lineChart.js') }}"></script>
 <script src="{{ url_for('static', filename = 'charts/example/scatterChart.js') }}"></script>
