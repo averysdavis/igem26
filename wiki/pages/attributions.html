@@ -1,38 +1,36 @@
 {% extends "layout.html" %}
 
 {% block title %}Attributions{% endblock %}
-{% block lead %}Accurate attribution is essential in the iGEM Competition. It ensures that the judges can properly assess your team's contributions and recognize the support provided by external collaborators. This page is dedicated to fulfilling the Attributions requirement for judging.{% endblock %}
+{% block lead %}Accurate attribution is essential in the iGEM Competition. It ensures that the judges can properly
+assess your team's contributions and recognize the support provided by external collaborators. This page is dedicated to
+fulfilling the Attributions requirement for judging.{% endblock %}
 
 {% block page_content %}
 
 <!--
-  ======================================================================
-  == VERY IMPORTANT                                                   ==
-  ======================================================================
-  LEAVE THE IFRAME CODE BELOW AS IT IS, THE ATTRIBUTION FORM OF YOUR TEAM
-  WILL BE DISPLAYED ON THIS PAGE. DO NOT REMOVE IT, OTHERWISE YOU RISK OF
-  NOT MEETING BRONZE MEDAL CRITERION #2
- -->
+======================================================================== VERY IMPORTANT                                                   ==
+======================================================================
+LEAVE THE IFRAME CODE BELOW AS IT IS, THE ATTRIBUTION FORM OF YOUR TEAM
+WILL BE DISPLAYED ON THIS PAGE. DO NOT REMOVE IT, OTHERWISE YOU RISK OF
+NOT MEETING BRONZE MEDAL CRITERION #2
+-->
 <div class="row mt-4">
-  <script type="text/javascript">
-    // Listen to size change and update form height
-    window.addEventListener("message", function (e) {
-      if (e.origin === "https://teams.igem.org") {
-        const {type, data} = JSON.parse(e.data);
-        if (type === "igem-attribution-form") {
-          const element = document.getElementById("igem-attribution-form");
-          element.style.height = `${data + 100}px`;
-        }
-      }
-    });
-  </script>
-<!--todo check src (team #)-->
-<iframe
-    style='width: 100%'
-    id="igem-attribution-form"
-    src="https://teams.igem.org/wiki/6080/attributions">
-  >
-  </iframe>
+	<script type="text/javascript">
+		// Listen to size change and update form height
+		window.addEventListener("message", function (e) {
+			if (e.origin === "https://teams.igem.org") {
+				const { type, data } = JSON.parse(e.data);
+				if (type === "igem-attribution-form") {
+					const element = document.getElementById("igem-attribution-form");
+					element.style.height = `${data + 100}px`;
+				}
+			}
+		});
+	</script>
+	<!--todo check src (team #)-->
+	<iframe style='width: 100%' id="igem-attribution-form" src="https://teams.igem.org/wiki/6080/attributions">
+		>
+	</iframe>
 </div>
 <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 

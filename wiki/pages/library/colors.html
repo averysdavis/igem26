@@ -5,48 +5,48 @@
 
 {% block extra_css %}
 <style>
-    /* Prevent in-page anchor jumps from landing under the fixed header */
-    #section1 {
-        scroll-margin-top: 5rem;
-    }
+	/* Prevent in-page anchor jumps from landing under the fixed header */
+	#section1 {
+		scroll-margin-top: 5rem;
+	}
 </style>
 {% endblock %}
 
 {% block page_content %}
 <div class="row">
-    <div class="col-12 col-md-3 col-lg-2 mb-5">
-        <nav id="scrollspy-nav" class="bg-light p-3 sticky-top" style="top: 80px;">
-            <div class="nav nav-pills flex-column">
-                <a class="nav-link" href="#section1">Section 1</a>
-                <a class="nav-link" href="#section2">Section 2</a>
-                <a class="nav-link" href="#section3">Section 3</a>
-            </div>
-        </nav>
-    </div>
+	<div class="col-12 col-md-3 col-lg-2 mb-5">
+		<nav id="scrollspy-nav" class="bg-light p-3 sticky-top" style="top: 80px;">
+			<div class="nav nav-pills flex-column">
+				<a class="nav-link" href="#section1">Section 1</a>
+				<a class="nav-link" href="#section2">Section 2</a>
+				<a class="nav-link" href="#section3">Section 3</a>
+			</div>
+		</nav>
+	</div>
 
-    <main class="col-12 col-md-9" data-bs-spy="scroll" data-bs-target="#scrollspy-nav" data-bs-offset="100"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        tabindex="0">
-        <section id="section1" class="mb-5">
-            <h2>Color 1</h2>
-            <hr />
-            <p>Hex Code: #000000</p>
-            <p>RGB: (0, 0, 0)</p>
-        </section>
+	<main class="col-12 col-md-9" data-bs-spy="scroll" data-bs-target="#scrollspy-nav" data-bs-offset="100"
+		tabindex="0">
+		<section id="section1" class="mb-5">
+			<h2>Color 1</h2>
+			<hr />
+			<p>Hex Code: #000000</p>
+			<p>RGB: (0, 0, 0)</p>
+		</section>
 
-        <section id="section2" class="mb-5">
-            <h2>Color 2</h2>
-            <hr />
-            <p>Hex Code: #000000</p>
-            <p>RGB: (0, 0, 0)</p>
-        </section>
+		<section id="section2" class="mb-5">
+			<h2>Color 2</h2>
+			<hr />
+			<p>Hex Code: #000000</p>
+			<p>RGB: (0, 0, 0)</p>
+		</section>
 
-        <section id="section3" class="mb-5">
-            <h2>Color 3</h2>
-            <hr />
-            <p>Hex Code: #000000</p>
-            <p>RGB: (0, 0, 0)</p>
-        </section>
-    </main>
+		<section id="section3" class="mb-5">
+			<h2>Color 3</h2>
+			<hr />
+			<p>Hex Code: #000000</p>
+			<p>RGB: (0, 0, 0)</p>
+		</section>
+	</main>
 </div>
 
 {% endblock %}
