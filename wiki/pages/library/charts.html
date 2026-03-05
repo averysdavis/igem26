@@ -10,28 +10,58 @@
 {% block page_content %}
 
 <section>
-    <h2>Basic Bar chart</h2>
-    <canvas id="barChart"></canvas>
+    <h2 id="barChart-title">Basic Bar chart</h2>
+    <p>Example bar chart of city populations.</p>
+    <p id="barChart-alt" class="visually-hidden">
+        Bar chart showing the populations of Boston, Worcester, Springfield, Lowell, Cambridge, and New Bedford.
+        Boston has the highest population at 617,594, and New Bedford has the lowest at 95,072, with the other cities
+        in between.
+    </p>
+    <canvas id="barChart" role="img" aria-labelledby="barChart-title" aria-describedby="barChart-alt"></canvas>
 </section>
 
 <section>
-    <h2>Comparison Bar chart</h2>
-    <canvas id="compBarChart"></canvas>
+    <h2 id="compBarChart-title">Comparison Bar chart</h2>
+    <p>Example bar chart comparing induced and uninduced samples.</p>
+    <p id="compBarChart-alt" class="visually-hidden">
+        Grouped bar chart showing fluorescence for six samples, labeled 1 through 6. For every sample, the induced bar
+        is more than twice as high as the uninduced bar. Induced values range from about 3.2 to 5.1 arbitrary units,
+        while uninduced values range from about 1.0 to 1.8.
+    </p>
+    <canvas id="compBarChart" role="img" aria-labelledby="compBarChart-title"
+        aria-describedby="compBarChart-alt"></canvas>
 </section>
 
 <section>
-    <h2>Pie chart</h2>
-    <canvas id="pieChart"></canvas>
+    <h2 id="pieChart-title">Pie chart</h2>
+    <p>Example pie chart with three colored segments.</p>
+    <p id="pieChart-alt" class="visually-hidden">
+        Pie chart divided into three segments labeled Red, Blue, and Yellow. Red is the largest segment with a value of
+        300, Yellow is medium with a value of 100, and Blue is the smallest with a value of 50.
+    </p>
+    <canvas id="pieChart" role="img" aria-labelledby="pieChart-title" aria-describedby="pieChart-alt"></canvas>
 </section>
 
 <section>
-    <h2>Line chart</h2>
-    <canvas id="lineChart"></canvas>
+    <h2 id="lineChart-title">Line chart</h2>
+    <p>Example line chart of values across an x axis.</p>
+    <p id="lineChart-alt" class="visually-hidden">
+        Line chart with points at x values 0, 5, 10, 15, 20, and 25. The y value starts at 12, rises to 20 at x equals
+        10, dips to 10 at x equals 15, peaks at 25 at x equals 20, and drops to 5 at x equals 25, forming a wavy
+        pattern.
+    </p>
+    <canvas id="lineChart" role="img" aria-labelledby="lineChart-title" aria-describedby="lineChart-alt"></canvas>
 </section>
 
 <section>
-    <h2>Scatter chart</h2>
-    <canvas id="scatterChart"></canvas>
+    <h2 id="scatterChart-title">Scatter chart</h2>
+    <p>Example scatter chart of four data points.</p>
+    <p id="scatterChart-alt" class="visually-hidden">
+        Scatter plot with four points at coordinates (10, 20), (15, 10), (20, 25), and (25, 5). The points are spread
+        across the chart, illustrating variation in both x and y values without a single straight-line trend.
+    </p>
+    <canvas id="scatterChart" role="img" aria-labelledby="scatterChart-title"
+        aria-describedby="scatterChart-alt"></canvas>
 </section>
 
 {% endblock %}
