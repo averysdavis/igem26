@@ -9,59 +9,266 @@
 
 {% block page_content %}
 
-<section>
+<section aria-labelledby="barChart-title">
     <h2 id="barChart-title">Basic Bar chart</h2>
     <p>Example bar chart of city populations.</p>
-    <p id="barChart-alt" class="visually-hidden">
-        Bar chart showing the populations of Boston, Worcester, Springfield, Lowell, Cambridge, and New Bedford.
-        Boston has the highest population at 617,594, and New Bedford has the lowest at 95,072, with the other cities
-        in between.
-    </p>
-    <canvas id="barChart" role="img" aria-labelledby="barChart-title" aria-describedby="barChart-alt"></canvas>
+    <figure class="mb-4">
+        <canvas id="barChart" role="img"
+            aria-label="Bar chart showing the populations of Boston, Worcester, Springfield, Lowell, Cambridge, and New Bedford. Boston has the highest population at 617,594, and New Bedford has the lowest at 95,072, with the other cities in between."></canvas>
+        <p class="mt-3 mb-0">
+            <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="collapse"
+                data-bs-target="#barChart-data-collapse" aria-expanded="false" aria-controls="barChart-data-collapse"
+                id="barChart-data-toggle">
+                Data table
+            </button>
+        </p>
+        <div class="collapse mt-2" id="barChart-data-collapse">
+            <div class="table-responsive">
+                <table id="barChart-data" class="table table-sm table-striped">
+                    <caption class="text-start">Population by city</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">City</th>
+                            <th scope="col">Population</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Boston</th>
+                            <td>617,594</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Worcester</th>
+                            <td>181,045</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Springfield</th>
+                            <td>153,060</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lowell</th>
+                            <td>106,519</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cambridge</th>
+                            <td>105,162</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">New Bedford</th>
+                            <td>95,072</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </figure>
 </section>
 
-<section>
+<section aria-labelledby="compBarChart-title">
     <h2 id="compBarChart-title">Comparison Bar chart</h2>
     <p>Example bar chart comparing induced and uninduced samples.</p>
-    <p id="compBarChart-alt" class="visually-hidden">
-        Grouped bar chart showing fluorescence for six samples, labeled 1 through 6. For every sample, the induced bar
-        is more than twice as high as the uninduced bar. Induced values range from about 3.2 to 5.1 arbitrary units,
-        while uninduced values range from about 1.0 to 1.8.
-    </p>
-    <canvas id="compBarChart" role="img" aria-labelledby="compBarChart-title"
-        aria-describedby="compBarChart-alt"></canvas>
+    <figure class="mb-4">
+        <canvas id="compBarChart" role="img"
+            aria-label="Grouped bar chart showing fluorescence for six samples. For every sample, the induced value is substantially higher than the uninduced value. Induced values range from 3.2 to 5.1 arbitrary units; uninduced values range from 1.0 to 1.8."></canvas>
+        <p class="mt-3 mb-0">
+            <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="collapse"
+                data-bs-target="#compBarChart-data-collapse" aria-expanded="false"
+                aria-controls="compBarChart-data-collapse" id="compBarChart-data-toggle">
+                Data table
+            </button>
+        </p>
+        <div class="collapse mt-2" id="compBarChart-data-collapse">
+            <div class="table-responsive">
+                <table id="compBarChart-data" class="table table-sm table-striped">
+                    <caption class="text-start">Fluorescence (AU) by sample</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Sample</th>
+                            <th scope="col">Induced</th>
+                            <th scope="col">Uninduced</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>3.8</td>
+                            <td>1.2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>4.2</td>
+                            <td>1.5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>3.5</td>
+                            <td>1.1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4 (joshi)</th>
+                            <td>5.1</td>
+                            <td>1.8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5 (k12)</th>
+                            <td>4.8</td>
+                            <td>1.6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6 (lb)</th>
+                            <td>3.2</td>
+                            <td>1.0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </figure>
 </section>
 
-<section>
+<section aria-labelledby="pieChart-title">
     <h2 id="pieChart-title">Pie chart</h2>
     <p>Example pie chart with three colored segments.</p>
-    <p id="pieChart-alt" class="visually-hidden">
-        Pie chart divided into three segments labeled Red, Blue, and Yellow. Red is the largest segment with a value of
-        300, Yellow is medium with a value of 100, and Blue is the smallest with a value of 50.
-    </p>
-    <canvas id="pieChart" role="img" aria-labelledby="pieChart-title" aria-describedby="pieChart-alt"></canvas>
+    <figure class="mb-4">
+        <canvas id="pieChart" role="img"
+            aria-label="Pie chart divided into three segments labeled Red, Blue, and Yellow. Red is the largest segment with a value of 300, Yellow has a value of 100, and Blue is the smallest with a value of 50."></canvas>
+        <p class="mt-3 mb-0">
+            <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="collapse"
+                data-bs-target="#pieChart-data-collapse" aria-expanded="false" aria-controls="pieChart-data-collapse"
+                id="pieChart-data-toggle">
+                Data table
+            </button>
+        </p>
+        <div class="collapse mt-2" id="pieChart-data-collapse">
+            <div class="table-responsive">
+                <table id="pieChart-data" class="table table-sm table-striped">
+                    <caption class="text-start">Segment values</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Color</th>
+                            <th scope="col">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Red</th>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Blue</th>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Yellow</th>
+                            <td>100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </figure>
 </section>
 
-<section>
+<section aria-labelledby="lineChart-title">
     <h2 id="lineChart-title">Line chart</h2>
     <p>Example line chart of values across an x axis.</p>
-    <p id="lineChart-alt" class="visually-hidden">
-        Line chart with points at x values 0, 5, 10, 15, 20, and 25. The y value starts at 12, rises to 20 at x equals
-        10, dips to 10 at x equals 15, peaks at 25 at x equals 20, and drops to 5 at x equals 25, forming a wavy
-        pattern.
-    </p>
-    <canvas id="lineChart" role="img" aria-labelledby="lineChart-title" aria-describedby="lineChart-alt"></canvas>
+    <figure class="mb-4">
+        <canvas id="lineChart" role="img"
+            aria-label="Line chart with points at x values 0, 5, 10, 15, 20, and 25. The y value starts at 12, rises to 20 at x equals 10, dips to 10 at x equals 15, peaks at 25 at x equals 20, and drops to 5 at x equals 25, forming a wavy pattern."></canvas>
+        <p class="mt-3 mb-0">
+            <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="collapse"
+                data-bs-target="#lineChart-data-collapse" aria-expanded="false" aria-controls="lineChart-data-collapse"
+                id="lineChart-data-toggle">
+                Data table
+            </button>
+        </p>
+        <div class="collapse mt-2" id="lineChart-data-collapse">
+            <div class="table-responsive">
+                <table id="lineChart-data" class="table table-sm table-striped">
+                    <caption class="text-start">Line chart coordinates</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">X value</th>
+                            <th scope="col">Y value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">0</th>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">25</th>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </figure>
 </section>
 
-<section>
+<section aria-labelledby="scatterChart-title">
     <h2 id="scatterChart-title">Scatter chart</h2>
     <p>Example scatter chart of four data points.</p>
-    <p id="scatterChart-alt" class="visually-hidden">
-        Scatter plot with four points at coordinates (10, 20), (15, 10), (20, 25), and (25, 5). The points are spread
-        across the chart, illustrating variation in both x and y values without a single straight-line trend.
-    </p>
-    <canvas id="scatterChart" role="img" aria-labelledby="scatterChart-title"
-        aria-describedby="scatterChart-alt"></canvas>
+    <figure class="mb-4">
+        <canvas id="scatterChart" role="img"
+            aria-label="Scatter plot with four points at coordinates (10, 20), (15, 10), (20, 25), and (25, 5). The points are spread across the chart, illustrating variation in both x and y values without a single straight-line trend."></canvas>
+        <p class="mt-3 mb-0">
+            <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="collapse"
+                data-bs-target="#scatterChart-data-collapse" aria-expanded="false"
+                aria-controls="scatterChart-data-collapse" id="scatterChart-data-toggle">
+                Data table
+            </button>
+        </p>
+        <div class="collapse mt-2" id="scatterChart-data-collapse">
+            <div class="table-responsive">
+                <table id="scatterChart-data" class="table table-sm table-striped">
+                    <caption class="text-start">Scatter plot coordinates</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">X value</th>
+                            <th scope="col">Y value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">25</th>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </figure>
 </section>
 
 {% endblock %}
