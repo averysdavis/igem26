@@ -43,7 +43,7 @@ The static assets are in the `static` directory. The layout and templates are in
   * [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
   * [Python](https://www.python.org): Programming language
   * [Flask](https://palletsprojects.com/projects/flask): Python framework
-  * [Fronzen-Flask](https://pypi.org/project/Frozen-Flask): Library that builds the wiki to be deployed as a static website
+  * [Frozen-Flask](https://pypi.org/project/Frozen-Flask): Library that builds the wiki to be deployed as a static website
   * [Bootstrap](https://getbootstrap.com/docs/5.3/components): CSS and JS components used
 
 ### Building locally (advanced users)
