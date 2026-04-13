@@ -1,67 +1,205 @@
-{% extends "layout.html" %}
-
-{% block title %}Example page{% endblock %}
-{% block lead %}This is the setup of a typical html page for this site{% endblock %}
-
-{% block extra_css %}
+{% extends "layout.html" %} {% block title %}Inclusivity{% endblock %} {%
+block lead %}{% endblock
+%} {% block extra_css %}
 <style>
-    /* Prevent in-page anchor jumps from landing under the fixed header */
-    #section1 {
-        scroll-margin-top: 5rem;
-    }
+  /* Prevent in-page anchor jumps from landing under the fixed header */
+  #section1 {
+    scroll-margin-top: 5rem;
+  }
 </style>
 <!--<link href="{{ url_for('static', filename = 'custom-css/home.css') }}" rel="stylesheet">-->
-{% endblock %}
-
-{% block page_content %}
+{% endblock %} {% block page_content %}
 <div class="row">
-    <div class="col-12 col-md-3 col-lg-2 mb-5">
-        <nav id="scrollspy-nav" class="bg-light p-3 sticky-top" style="top: 80px;">
-            <div class="nav nav-pills flex-column">
-                <a class="nav-link" href="#section1">Section 1</a>
-                <a class="nav-link" href="#section2">Section 2</a>
-                <a class="nav-link" href="#section3">Section 3</a>
-            </div>
-        </nav>
-    </div>
+  <div class="col-12 col-md-3 col-lg-2 mb-5">
+    <nav id="scrollspy-nav" class="bg-light p-3 sticky-top" style="top: 80px">
+      <div class="nav nav-pills flex-column">
+        <a class="nav-link" href="#Obstacles">Obstacles</a>
+        <a class="nav-link" href="#Our Team">Our Team</a>
+        <a class="nav-link" href="#Community Lab">Community Lab</a>
+        <a class="nav-link" href="#Education">Education</a>
+        <a class="nav-link" href="#Wiki Accessibility">Wiki Accessibility</a>
+        <a class="nav-link" href="#Future Plans">Future Plans</a>
+        <a class="nav-link" href="#References">References</a>
+      </div>
+    </nav>
+  </div>
 
-    <main class="col-12 col-md-9" data-bs-spy="scroll" data-bs-target="#scrollspy-nav" data-bs-offset="100"
-        tabindex="0">
-        <section id="section1" class="mb-5">
-            <h2>Title of Section 1</h2>
-            <hr />
-            <p>Content of Section 1</p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris.
-            </p>
-            <p>I am Shreeya!</p>
-        </section>
+  <main
+    class="col-12 col-md-9"
+    data-bs-spy="scroll"
+    data-bs-target="#scrollspy-nav"
+    data-bs-offset="100"
+    tabindex="0"
+  >
+    <section id="Obstacles" class="mb-5">
+      <h1>Obstacles</h1>
+      <hr />
+      <p>
+        Worldwide, knowledge about synthetic biology is limited. In 2021, 85% of
+        people were not aware that synthetic biology existed (Public Attitudes).
+        Many in the U.S. find it difficult to access science due to a variety of
+        factors including gender, race, age, socioeconomic status, and language.
+        We sought to overcome these obstacles in our team and our efforts.
+      </p>
+    </section>
 
-        <section id="section2" class="mb-5">
-            <h2>Title of Section 2</h2>
-            <hr />
-            <p>Content of Section 2</p>
-            <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>Shreeya</p>
-        </section>
+    <section id="Our Team" class="mb-5">
+      <h1>Our Team</h1>
+      <hr />
+      <p>
+        We aspire to make synthetic biology accessible to all students. As the
+        only high school iGEM team in all of Northern California, we understand
+        that being based in a private school is one of many barriers to
+        synthetic biology. To account for this,
+        <strong
+          >we encourage non-Khan Lab School students to join our team. As a
+          result, our team represents a wide variety of public and private
+          schools
+        </strong>
+        including Helios School, Gunn High School, La Entrada School, Proof
+        School, Bellarmine College Preparatory, and San Francisco University
+        High School.
+      </p>
+      <img
+        src="https://static.igem.wiki/teams/5761/humanpractices/inclusivity/schoolmap.webp"
+        alt="Map of Bay Area"
+        width="100%"
+        height="auto"
+      />
+      <p class="left-aligned">Map of schools our team members attend.</p>
+      <hr />
+      <p>
+        We believe diversity must also come from within our team. Our team
+        members represent a diverse set of different identities, with
+        <strong
+          >88% of our members identifying as people of color, 53% of our members
+          identifying as female, and our members collectively speaking 15
+          different languages</strong
+        >.
+      </p>
+    </section>
 
-        <section id="section3" class="mb-5">
-            <h2>Title of Section 3</h2>
-            <hr />
-            <p>Content of Section 3</p>
-            <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            </p>
-        </section>
-    </main>
+    <section id="Community Lab" class="mb-5">
+      <h1>Community Lab</h1>
+      <hr />
+      <p>
+        Despite its name, Khan Lab School does not have laboratory space. Due to
+        this, our team is a proud member of Biocurious, a community lab in Santa
+        Clara. Biocurious connects us to other scientists and community efforts.
+        This allows us to engage our community and form long-lasting
+        connections.
+      </p>
+      <hr />
+      <img
+        src="https://static.igem.wiki/teams/5761/humanpractices/inclusivity/khushi-lab.webp"
+        alt="Khushi working"
+        width="100%"
+        height="auto"
+      />
+      <p>Khushi, a member of our team, performing wetlab work at Biocurious.</p>
+    </section>
+
+    <section id="Education" class="mb-5">
+      <h1>Education</h1>
+      <hr />
+      <p>
+        Our educational efforts directly brought synthetic biology to a diverse
+        set of students. We visited both public and private schools, including
+        Helios school (private) and Laurel Elementary (public). Our session at
+        Laurel Elementary was run in Spanish and English, to cater to the
+        Spanish immersion students. Our session at the Krishnadham temple was
+        run in Hindi, Gujarati, and English. Our session with students from
+        China was run entirely in Mandarin, with discussion and Q&As between our
+        members and the students.
+      </p>
+      <p>
+        Additionally, we ran a class at the Mandir Shreemaya Krishnadham Temple,
+        a Hindu temple in San Jose. This allowed us to reach our local Hindu
+        community.
+      </p>
+      <p>
+        In collaboration with Stanford University's Stanley Qi Lab, we helped
+        adapt CRISPR Kit curriculum to high school students, an effort which is
+        still ongoing through Khan Lab School's Cornerstone program. Our
+        educational sessions with the Qi Lab at Khan Lab School gave our
+        students hands-on synthetic biology lab experience. Students were given
+        the opportunity to further explore CRISPR, bioengineering, and more,
+        with mentorship from the Qi Lab.
+      </p>
+      <p>
+        Our team posted about our efforts on social media, spreading awareness
+        about our team and mission, allowing us to reach anyone with an internet
+        connection.
+      </p>
+      <p>
+        See the
+        <a href="https://2025.igem.wiki/khanlab-bayarea/education"
+          >education page</a
+        >
+        for more.
+      </p>
+    </section>
+
+    <section id="Wiki Accessibility" class="mb-5">
+      <h1>Wiki Accessibility</h1>
+      <hr />
+      <p>
+        Our team designed and built our wiki to be accessible to those with
+        disabilities by complying with the web content accessibility guidelines
+        (WCAG). The entire wiki is navigable by keyboard, making it navigable to
+        those unable to use a mouse or those utilizing external navigation
+        tools. All images are accompanied by alt tags for those with visual
+        impairments. Alt tags make images accessible through the use of screen
+        readers or braille converters. All pages have distinct and descriptive
+        titles to distinguish what page users are on. The color palette used is
+        friendly to those with color blindness, with a 99.85% confidence rating
+        (HP et al.). All collapsible content, image carousels, and navigation
+        bars are accompanied by ARIAs, accessible rich internet applications,
+        which form hints and error messages, live content updates, and more. All
+        videos are properly titled and have validated subtitles, with videos not
+        in English being captioned in the original language and English. All
+        videos also have accompanying transcripts containing descriptions. All
+        links are clearly labeled, allowing users to easily understand what they
+        click on.
+      </p>
+    </section>
+
+    <section id="Future Plans" class="mb-5">
+      <h1>Future Plans</h1>
+      <hr />
+      <p>
+        We push our own members to pursue synthetic biology even after
+        graduation. During our joint visit with the UCSC iGEM team, visiting
+        UCSC students encouraged our members to pursue further education. The
+        students explained the value of not just an undergraduate education in
+        related fields, but encouraged our members to pursue graduate school,
+        and careers or research in synthetic biology.
+      </p>
+    </section>
+
+    <section id="References" class="mb-5">
+      <h1>References</h1>
+      <hr />
+      <p>
+        Synthetic Biology Future Science Platform. (2021). Public attitudes
+        towards synthetic biology.
+        <a
+          href="https://research.csiro.au/synthetic-biology-fsp/public-attitudes/"
+          rel="noopener noreferrer"
+          >https://research.csiro.au/synthetic-biology-fsp/public-attitudes/</a
+        >.
+      </p>
+      <p>
+        Stevens HP, Winegar CV, Oakley AF, Piccolo SR. Estimating the prevalence
+        of images in the biology literature that are problematic for people with
+        a color-vision deficiency.
+        <a
+          href="https://bioapps.byu.edu/colorblind_image_tester"
+          rel="noopener noreferrer"
+          >https://bioapps.byu.edu/colorblind_image_tester</a
+        >.
+      </p>
+    </section>
+  </main>
 </div>
-
 {% endblock %}
