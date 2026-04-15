@@ -13,7 +13,7 @@ You should probably only edit the files inside folders `static`, `wiki` and `wik
 2. Make the changes on the files you wish:
     * For the menu, change the file [menu.html](wiki/menu.html)
     * For the layout, change the file [layout.html](wiki/layout.html)
-    * For the pages, change the corresponding file in the foler [pages](wiki/pages)
+    * For the pages, change the corresponding file in the folder [pages](wiki/pages)
 3. Review the changes you made
 4. Once you are done, save the changes by **committing** them to the *main branch* of the repository 
 5. An automated script will build, test and deploy your wiki, which should take less than 30 seconds.
