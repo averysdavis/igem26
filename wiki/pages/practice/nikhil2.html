@@ -1,67 +1,130 @@
-{% extends "layout.html" %}
-
-{% block title %}Example page{% endblock %}
-{% block lead %}This is the setup of a typical html page for this site{% endblock %}
-
-{% block extra_css %}
+{% extends "layout.html" %} {% block title %}Example page{% endblock %} {% block
+lead %}This is the setup of a typical html page for this site{% endblock %} {%
+block extra_css %}
 <style>
-    /* Prevent in-page anchor jumps from landing under the fixed header */
-    #section1 {
-        scroll-margin-top: 5rem;
-    }
+  /* Prevent in-page anchor jumps from landing under the fixed header */
+  #section1 {
+    scroll-margin-top: 5rem;
+  }
 </style>
 <!--<link href="{{ url_for('static', filename = 'custom-css/home.css') }}" rel="stylesheet">-->
-{% endblock %}
-
-{% block page_content %}
+{% endblock %} {% block page_content %}
 <div class="row">
-    <div class="col-12 col-md-3 col-lg-2 mb-5">
-        <nav id="scrollspy-nav" class="bg-light p-3 sticky-top" style="top: 80px;">
-            <div class="nav nav-pills flex-column">
-                <a class="nav-link" href="#section1">Section 1</a>
-                <a class="nav-link" href="#section2">Section 2</a>
-                <a class="nav-link" href="#section3">Section 3</a>
-            </div>
-        </nav>
-    </div>
+  <img
+    src="https://static.igem.wiki/teams/5761/humanpractices/ihp/hpcover.webp"
+    alt="The team giving a practice presentation."
+    class="img-fluid"
+  />
+  <p class="text-center">Our team presenting our work to our community.</p>
+  <p>
+    From the beginning, Rock the Plastics aimed to be a community project. Our
+    major objective was to ensure our project delivered a real-world solution.
+    Throughout our process, we involved stakeholders to ensure our solution
+    truly met their needs.
+  </p>
+  <p>
+    Our team realized there are already great efforts focused on capturing
+    plastics, but once captured the plastic usually ends up in landfills where
+    they leak back into the environment (University of Illinois). Additionally,
+    the United States alone quarries 1.5 billion tons of stone annually (U.S.
+    Geological Survey).
+  </p>
+  <p>
+    Our project aims to address two main issues: plastics and microplastics
+    re-entering the environment after capture and the use of non-renewable
+    rocks.
+  </p>
+  <h1>Methodology</h1>
+  <p>
+    Our team divided our human practices efforts into three phases. Our first
+    phase, project ideation, ensured our project idea would be relevant to our
+    local community and benefit stakeholders. Our second phase, concept design,
+    refined our project idea to address exactly what our stakeholders needed.
+    Finally, our third and final phase, verification, validated that our
+    technical work in both wetlab and drylab was effective in meeting our
+    objectives. Throughout all three phases, we talked to a number of
+    stakeholders and experts and made sure to integrate their feedback into our
+    project.
+  </p>
+  <hr />
+  <h1 class="text-center">Integrated Human Practices</h1>
+  <p class="text-center">
+    All our different efforts in integrating our human practices feedback:
+  </p>
+  <div class="col-12 col-md-3 col-lg-2 mb-5">
+    <nav id="scrollspy-nav" class="bg-light p-3 sticky-top" style="top: 80px">
+      <div class="nav nav-pills flex-column">
+        <a class="nav-link" href="#section1">Section 1</a>
+        <a class="nav-link" href="#section2">Section 2</a>
+        <a class="nav-link" href="#section3">Section 3</a>
+      </div>
+    </nav>
+  </div>
 
-    <main class="col-12 col-md-9" data-bs-spy="scroll" data-bs-target="#scrollspy-nav" data-bs-offset="100"
-        tabindex="0">
-        <section id="section1" class="mb-5">
-            <h2>Title of Section 1</h2>
-            <hr />
-            <p>Content of Section 1</p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris.
-            </p>
-            <p>I am Shreeya!</p>
-        </section>
+  <main
+    class="col-12 col-md-9"
+    data-bs-spy="scroll"
+    data-bs-target="#scrollspy-nav"
+    data-bs-offset="100"
+    tabindex="0"
+  >
+    <section id="section1" class="mb-5">
+      <h1>Project Ideation</h1>
+      <p>
+        To supplement our preliminary research, we contacted academics in
+        various areas we were interested in exploring. Our meeting with Dr.
+        Phillip Kyriakakis and Dr. Sukrit Silas, discussion about community
+        integration, a team poll, and consultation with Dr. Chris Hernandez, our
+        secondary investigator, allowed us to finalize our project idea.
+      </p>
+      <hr />
+      <h2>Dr. Phillip Kyriakakis</h2>
+      <a
+        class="btn btn-primary"
+        data-bs-toggle="collapse"
+        href="#Kyriakakiscollapse"
+        role="button"
+        aria-expanded="false"
+        aria-controls="Kyriakakiscollapse"
+      >
+        Read more about Dr.Kyriakakis
+      </a>
+      <div class="collapse" id="Kyriakakiscollapse">
+        <div class="card card-body">
+          <p>
+            February 14, 2025 Attendees: Ansh, Khushi, Avery, Paul, Nick,
+            Anandita, Sameer, Zoya, Alisha Phillip Kyriakakis, Ph.D. is a Senior
+            Research Scientist in the Bioengineering Department at Stanford
+            University and a member of the Wu Tsai Institute for Neuroscience.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <section id="section2" class="mb-5">
-            <h2>Title of Section 2</h2>
-            <hr />
-            <p>Content of Section 2</p>
-            <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>Shreeya</p>
-        </section>
+    <section id="section2" class="mb-5">
+      <h2>Title of Section 2</h2>
+      <hr />
+      <p>Content of Section 2</p>
+      <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>Shreeya</p>
+    </section>
 
-        <section id="section3" class="mb-5">
-            <h2>Title of Section 3</h2>
-            <hr />
-            <p>Content of Section 3</p>
-            <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            </p>
-        </section>
-    </main>
+    <section id="section3" class="mb-5">
+      <h2>Title of Section 3</h2>
+      <hr />
+      <p>Content of Section 3</p>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo.
+      </p>
+    </section>
+  </main>
 </div>
 
 {% endblock %}
