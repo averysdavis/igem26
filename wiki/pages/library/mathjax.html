@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
-{% block title %}Example page{% endblock %}
-{% block lead %}This is the setup of a typical html page for this site{% endblock %}
+{% block title %}Mathjax{% endblock %}
+{% block lead %}This is an example page of how to use mathjax{% endblock %}
 
 {% block extra_css %}
 <style>
@@ -18,7 +18,7 @@
     <div class="col-12 col-md-3 col-lg-2 mb-5">
         <nav id="scrollspy-nav" class="bg-light p-3 sticky-top" style="top: 80px;">
             <div class="nav nav-pills flex-column">
-                <a class="nav-link" href="#section1">Section 1</a>
+                <a class="nav-link" href="#section1">Quadratic Formula</a>
                 <a class="nav-link" href="#section2">Section 2</a>
                 <a class="nav-link" href="#section3">Section 3</a>
             </div>
@@ -28,15 +28,12 @@
     <main class="col-12 col-md-9" data-bs-spy="scroll" data-bs-target="#scrollspy-nav" data-bs-offset="100"
         tabindex="0">
         <section id="section1" class="mb-5">
-            <h2>Title of Section 1</h2>
+            <h2>Quadratic Formula</h2>
             <hr />
-            <p>Content of Section 1</p>
+            <p>The following uses latex and is centered:</p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris.
+                \[a^2 + b^2 = c^2\]
             </p>
-            <p>I am Shreeya!</p>
         </section>
 
         <section id="section2" class="mb-5">
