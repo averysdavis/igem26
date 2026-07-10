@@ -47,37 +47,8 @@
     <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
     {% include 'footer.html' %}
 
-    <!-- jQuery -->
-    <script src="{{ url_for('static', filename = 'jquery.min.js') }}"></script>
-
     <!-- Bootstrap Bundle with Popper -->
     <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
-
-    <!-- Pattern library for Chart.js fills (Patternomaly) -->
-    <script src="{{ url_for('static', filename = 'patternomaly.js') }}"></script>
-
-    <!-- Chart.js -->
-    <script src="{{ url_for('static', filename = 'chart.js') }}"></script>
-
-    <!-- Chart.js Accessibility Plugin -->
-    <script src="{{ url_for('static', filename = 'chartjs-plugin-a11y.js') }}"></script>
-    <script>
-        // Register the accessibility plugin with Chart.js
-        if (typeof Chart !== 'undefined' && typeof ChartjsPluginA11y !== 'undefined') {
-            Chart.register({ ChartjsPluginA11y });
-        }
-    </script>
-
-    <!-- MathJax -->
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['\\[', '\\]']]
-            }
-        };
-    </script>
-    <script id="MathJax-script" async src="{{ url_for('static', filename = 'mathjax/tex-chtml.js') }}"></script>
 
     <!-- Page-specific JavaScript -->
     {% block extra_js %}{% endblock %}
